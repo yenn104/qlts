@@ -1,0 +1,611 @@
+@charset "ISO-8859-1";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);	
+/* class dùng để gọi tổng bố cục cho body */
+.container{
+	text-align: center;
+	font-family: Courier New, sans-serif;
+	font-size: 17px;
+	/* color:pink; */
+	width: 100%;
+}
+
+
+#hihi1{
+/* 	background: green; */
+	text-align: center;
+}
+
+
+ul.products{
+	margin: 3% 9%;
+	display: -webkit-box;
+	flex-wrap: wrap;
+	padding: 5px 0px;
+	justify-content: space-between;
+}
+
+ul.products li{
+	flex-basis: 22%;
+	box-sizing: boder-box;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-bottom: 30px;
+	
+}
+
+
+ul.products img{
+	max-width: 100%;
+	height: auto;
+/* 	text-align:center; */
+}
+
+ul.products li .product-info a{
+	display: block;
+	
+}
+
+ul.products li .product-info a.product-name{
+	font-size: 15px;
+	color: rgb(229, 163, 166);
+	text-decoration: none;
+	padding: 10px 10px;
+}
+
+
+ul.products li .product-item:hover{
+	background-color: rgb(248, 242, 242);
+	border-radius: 12px;
+	padding: 3px 1px;
+}
+
+.product-item{
+	margin:5px 0px;
+	padding: 4px 2px;
+}
+
+ul.products li .product-top{
+	position: relative;
+	overflow: hidden;
+}
+
+ul.products li .product-top .product-thumb{
+	display: block;
+	padding: 0px 0px;
+	
+}
+
+ul.products li .product-top .product-thumb img{
+	display: block;
+}
+
+ul.products li .product-top a.cart, ul.products li .product-top p.cart{
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	background-color: rgb(209, 103, 166) ;
+	color: white;
+	padding: 10px 0px;
+	position: absolute;
+	bottom: -70px;
+	width: 100%;
+	transition: 0.25s ease-in-out;
+	opacity: 80%;
+}
+
+ul.products li:hover a.cart{
+	bottom: 0px;
+}
+
+ul.products li:hover p.cart{
+	bottom: -18px;
+}
+
+.product-price{
+	text-decoration: none;
+	font-weight: light;
+	font-size: 14px;
+	color: rgb(0, 0, 0);
+}
+
+
+.menu{
+	width: 100%;
+	border: 2px ridge rgb(243 200 192);
+	border-radius: 10px;
+	text-align: center;
+ 	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	display: flex;
+	justify-content: space-evenly ;
+	 		
+}
+ .table{
+ 	width:100%;
+ }
+ 
+ .centered{
+ 	margin:10px;
+ 	text-align: center;
+ }
+
+ul{
+	list-style-type:none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: white;
+}
+
+li{
+	float: left;
+}
+
+.menu ul li{
+	margin: 0px 25px;
+}
+
+li a, .dropbtn{
+	display: inline-block;
+	color: rgb(229, 163, 166);  /* màu chữ của li */
+	font-weight: bold;
+	text-align: center;
+/* 	font-size: 15px;  size chữ của btn khi chưa di chuột vào */
+	padding: 14px 16px;
+	text-decoration: none;
+	/* margin: 0px 15px; */
+}
+
+li a:hover, .dropdown:hover .dropbtn{
+	background-color: rgb(248, 242, 242); /* màu của btn khi di chuột vào */
+	border-radius: 12px;
+/* 	font-weight: lighter;			
+	font-style: italic; */  /* both li and a */
+/* 	font-size: 16px; size chữ của btn khi di chuột vào */
+}
+
+li.dropdown{
+	display: inline-block;
+}
+
+.dropdown-content{
+	display: none;
+	position: absolute;
+	background-color: rgb(255, 254, 252);
+	min-width: 160px;
+/* 	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
+	border-radius: 12px;
+}
+
+.dropdown-content a{
+	color: black;
+	font-size: 14px; /* only font-size items trong li (li trong ul) */
+	font-weight: lighter;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+
+.dropdown-content a:hover {
+	background-color: rgb(248, 242, 242);
+}
+
+.dropdown:hover .dropdown-content{
+	display: block;  /* bang li */
+}
+
+
+
+.search-container {
+	float: right;
+	border: ridge;
+}
+
+.search-container button{
+	/* float: right; */
+	padding: 6px 15px;
+	margin-top: 8px;
+	margin-right: 8px; 
+	background: #fff;
+	font-size: 15px;
+	border: none;
+	cursor: pointer;
+}
+
+.search-container button:hover {
+ 	background-color: rgb(248, 242, 242)
+}
+
+.section_1{
+	display: flex;
+	justify-content: center;
+	padding:10px;
+	text-align:justify;
+	margin-top:20px;
+	margin-left:8%;
+	margin-right:8%;
+	margin-bottom: 20px;
+}
+
+
+.section_1 img{
+/* 	width: 50%; */
+	display: block;
+	position: inherit;
+	top: 15px;
+	left: 40px;
+	right: 15px;
+	bottom: 15px;
+	margin:20px;
+}
+
+.section_1 span{
+	width: 25%;
+	display: block;
+	position: inherit;
+	top: 15px;
+	left: 15px;
+	right: 40px;
+	bottom: 15px;
+	margin:30px;
+	padding:50px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+ /*  transform: translate(-50%, -50%); */
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 30%;
+  height: 500px;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover, .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* LOGIN BOX  */
+.logSign-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+}
+
+.logSign-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.logSign-box .user-box {
+  position: relative;
+}
+
+.logSign-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+.logSign-box .user-box label {
+  position: absolute;
+  top:0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.logSign-box .user-box input:focus ~ label,
+.logSign-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: rgb(241, 192, 183);
+  font-size: 12px;
+}
+
+.logSign-box form a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: rgb(241, 192, 183);
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 40px;
+  letter-spacing: 4px
+}
+
+.logSign-box a:hover {
+  background: rgb(241, 192, 183);
+  color: #000000;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgb(229, 163, 166),
+              0 0 25px rgb(229, 163, 166),
+              0 0 50px rgb(229, 163, 166),
+              0 0 100px rgb(229, 163, 166);
+}
+
+.logSign-box a input{
+	color: rgb(229, 163, 166);
+	font-size:16px;
+    font-family: Courier New, sans-serif;
+	background-color: rgba(0,0,0,0.0); 
+	border: rgba(0,0,0,0.0)
+}
+
+.logSign-box a input:hover{
+	color: #000000;
+	border-radius: 5px;
+}
+
+
+.logSign-box a span {
+  position: absolute;
+  display: block;
+}
+
+.logSign-box a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #000000);
+  animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%,100% {
+    left: 100%;
+  }
+}
+
+.logSign-box a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, rgb(229, 163, 166));
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%,100% {
+    top: 100%;
+  }
+}
+
+.logSign-box a span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, rgb(229, 163, 166));
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%,100% {
+    right: 100%;
+  }
+}
+
+.logSign-box a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #000000);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: .75s
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,100% {
+    bottom: 100%;
+  }
+}
+
+
+/* detail product */
+
+#detail-product {
+	width: 80%;
+	margin:100px 0px 20px 0px;
+	justify-content: center;
+    display: inline-flex;
+	
+}
+
+.detail-img img{
+	width:350px;
+	margin: 0px 25px;
+}
+
+.detail-info{
+	width:450px;
+	border: 1px solid rgb(243 200 192);
+	margin: 0px 25px;
+}
+
+.detail-info p{
+	margin: 50px 40px 0px 40px;
+	text-align: left;
+}
+
+#detail-mota{
+	width: 850px;
+    margin: 20px 0px;
+	justify-content: center;
+    display: inline-flex;
+	border: 1px solid rgb(243 200 192);
+	text-align: justify;
+}
+
+#detail-mota p{
+	margin: 20px 50px;
+}
+
+
+.cart1{
+	justify-content: center;
+}
+
+
+.detail-info a, p.cart1{
+    margin-top: 36px;
+    margin-left: 0px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    background-color: rgb(209, 103, 166);
+    color: white;
+    padding: 10px 0px 10px 0px;
+    position: absolute;
+    width: inherit;
+    height: 20px;
+    transition: 0.25s ease-in-out;
+    opacity: 75%;
+}
+
+
+
+.error{
+	margin: 10%;
+	color: rgb(229, 163, 166);
+	font-size: 17px;
+}
+
+
+
+/* userinfo  */
+#person-welcome{
+	margin: 70px 30px;
+	color: rgb(229, 163, 166);
+	font-weight: bold;
+	font-size: 22px;
+}
+
+
+
+#user-info{
+	margin: 40px 20px;
+	color: rgb(229, 163, 166);
+	font-weight: bold;
+	font-size: 20px;
+	display: flex;
+}
+
+.basic-info{
+   	width:420px;
+	margin:60px 80px; 
+   	color: black;
+   	font-weight: lighter;
+   	font-size: 15px;
+   	text-align: left;
+   }
+   
+.basic-info tr td{
+   	width:100px;
+   	padding: 0px 24px;
+   }
+   
+   /* .basic-info tr td p{
+   	width:160px;
+   } */
+   
+.basic-info tr td a{
+   	width: 120px;
+   	padding: 10px;
+   	text-align: center;
+   	text-decoration: none;
+   	color: black;
+   	background-color: #ffdbda;
+   }
+
+.order-info{
+	width:700px;
+	margin:70px 20px; 
+   	color: black;
+   	font-weight: lighter;
+   	font-size:15px;
+   	text-align: center;
+}
+
+.order-history table tr td{
+   	border: 0.1px solid rgb(241 192 183);
+   	/* text-align: center;
+   	 */
+   }
+   
+
+/*  noti */
+.noti{
+	margin:50px;
+	color: #84dcc6;
+    font-family: Courier New;
+    font-weight: bold;
+    font-size: 18px;
+}
